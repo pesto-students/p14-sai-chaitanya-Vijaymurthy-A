@@ -1,0 +1,14 @@
+.logo{
+    width: 600px;
+    height: auto;
+}
+.image{
+    width: 300px;
+    height: auto;
+}
+.form-group{
+    margin-top: 10px;
+}
+.form-group label {
+    display: block;
+}
