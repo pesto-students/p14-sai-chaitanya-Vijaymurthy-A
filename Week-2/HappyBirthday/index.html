@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HBD Message Creator</title>
+        <meta name="description" content="Form for creating Happy Birthday Message">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+       <header>
+            <h1>
+                Happy Birthday Message Creator
+            </h1>
+       </header>
+       <!-- main section where all the major content of the webpage presents here -->
+       <main>
+            <!-- Section tag groups similar related content -->
+            <section>
+                <form method="post" id="messageForm">
+                    <div>
+                        <label for="message"> Message?</label>
+                        <input type="text" id="message" name="message">
+                    </div>
+                    <div>
+                        <label for="email"> Email?</label>
+                        <input type="email" id="email" name="email" placeholder="name@domain.com">
+                    </div>
+                    <div>
+                        <label for="date"> Date to send?</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="color"> Message color?</label>
+                        <input type="color" id="color" name="color">
+                    </div>
+                    <div>
+                        <label for="blinks"> Number of blinks?</label>
+                        <input type="number" min="0" max="10" id="blinks" name="blinks" value="0">
+                    </div>
+                    <div>
+                        <label for="volume">Music volume?</label>
+                        <input type="range" id="volume" name="volume" max="50" value="20">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Send Birthday Message">
+                    </div>
+                </form>
+            </section>
+            <!-- script tag to run js. This js validates the given email using regex filter -->
+            <script>
+                document.getElementById("messageForm").addEventListener("submit", function(event){
+                    const regex = /[a-zA-Z0-9-_.]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*/;
+                    const email = document.getElementById("email").value;
+                    if(!regex.test(email)){
+                        event.preventDefault();
+                    }
+                });
+            </script>
+       </main>
+    </body>
+</html>

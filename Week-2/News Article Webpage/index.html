@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>News Article</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header section -->
+        <header>
+            <!-- Image tag for logo -->
+            <img class="logo" src="images/arizona-logo.png" alt="Arizona Logo">
+            <h1>Studying How Meditation Helps Breast Cancer Survivors and Their Partners</h1>
+        </header>
+        <!-- main section -->
+        <main>
+            <section>
+                <p>Thaddeus Pace, PhD, shares his team’s current research into whether guided meditation can benefit breast cancer survivors and their loved ones.</p>
+                <img class="image" src="images/meditation.jpeg" alt="mediation">
+            </section>
+            <section>
+                <p>
+                    Cancer is a physically, emotionally and mentally exhausting experience.<br><br>
+
+                    Many of the 3.8 million breast cancer survivors in the United States today experience disruptive psychological distress or anxiety and depression.<br><br>
+
+                    Research suggests that distress experienced by survivors involves dysregulation of the body’s stress response pathways. Plus, the biology of cancer and treatment side effects can lead to increased inflammation and change the release of stress hormones including cortisol in the body.                </p>
+            </section>
+            <section>
+                <!-- form tag -->
+                <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="fullName">Name : </label>
+                        <input type="text" name="name" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email : </label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message : </label>
+                        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="picture">Upload : </label>
+                        <input type="file" id="picture" name="picture">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
