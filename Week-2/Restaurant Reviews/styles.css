@@ -1,0 +1,44 @@
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.review-div{
+    margin-top: 10px;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+footer{
+    margin-top: 10px;
+}
+
+a{
+    margin-right: 20px;
+}
+
+.rating{
+    font-size: 2em;
+}
+
+.full-star{
+    color: gold;
+    cursor: pointer;
+}
+
+.black-star{
+    color: gray;
+    position: relative;
+    cursor: pointer;
+}
+
+.half-star {
+    position: absolute;
+    left: 0;
+    width: 50%;    
+    color: gold;
+    overflow: hidden;
+}
