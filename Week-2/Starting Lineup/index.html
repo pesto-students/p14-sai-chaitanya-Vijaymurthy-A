@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Team's Lineup</title>
+        <meta name="description" content="This page is used to select team's starting lineup">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <h1> Starting Lineup</h1>
+        </header>
+        <!-- main Section -->
+        <main>
+            <form method="post">
+                <p>
+                    <!-- Created a fieldset with legand named status containing radio button -->
+                    <fieldset>
+                        <legend>Status</legend>
+                        <input type="radio" name="status" id="draft" value="Draft">
+                        <label for="draft">Draft</label>
+                        <input type="radio" name="status" id="final" value="Final" checked>
+                        <label for="final">Final</label>
+                    </fieldset>
+                </p>
+                <p>
+                    <!-- created select dropbox using select and option tag -->
+                    <label for="gameDate"> Date :</label>
+                    <select name="gameDate" id="gameDate">
+                        <option value="March 20"> March 20</option>
+                        <option value="March 24"> March 24</option>
+                        <option value="April 2"> April 2</option>
+                        <option value="April 6"> April 6</option>
+                        <option value="April 13"> April 13</option>
+                    </select>
+                </p>
+                <p>
+                    <!-- Created a fieldset with legand named Players containing checkbox -->
+                    <fieldset>
+                        <legend>Players</legend>
+                        <p class="player">
+                            <input type="checkbox" name="player" value="Aarav Agarwal" id="Aarav">
+                            <label for="Aarav"> Aarav Agarwal</label>
+                        </p>
+                        <p class="player">
+                            <input type="checkbox" name="player" value="Ava Johnson" id="Ava">
+                            <label for="Ava"> Ava Johnson</label>
+                        </p>
+                        <p class="player">
+                            <input type="checkbox" name="player" value="Julio Ortiz" id="Julio">
+                            <label for="Julio"> Julio Ortiz</label>    
+                        </p>
+                        <p class="player">
+                            <input type="checkbox" name="player" value="Liam Rubio" id="Liam">
+                            <label for="Liam"> Liam Rubio</label>
+                        </p>
+                        <p class="player">
+                            <input type="checkbox" name="player" value="Emma Witherspoon" id="Emma">
+                            <label for="Emma"> Emma Witherspoon</label>
+                        </p>
+                    </fieldset>
+                </p>
+                <p>
+                    <input type="submit" value="submit">
+                </p>
+
+            </form>
+        </main>
+    </body>
+</html>
