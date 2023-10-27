@@ -1,0 +1,53 @@
+body{
+    font-family: Roboto, Helvetica, sans-serif;
+}
+h4{
+    color: #444444;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.offer{
+    display: inline-block;
+    border: 1px solid #cccccc;
+    width: 400px;
+    margin: 5px;
+}
+.title{
+    text-align: center;
+    font-size: 14px;
+    background-color: #00b3b3;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.offerContents{
+    padding: 20px;
+    background-color: #fafafa;
+}
+.headerCell{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    color: #777777;
+}
+
+.dataCell{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: #444444;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: left;
+}
+.finalValue{
+    font-weight: bold;
+    color: #2222ff;
+}
