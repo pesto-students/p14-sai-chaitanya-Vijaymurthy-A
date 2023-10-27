@@ -1,0 +1,56 @@
+:root{
+    --table-color: hsl(120, 100%, 25%)
+}
+
+/* 
+    Using HSL for colors makes us easy to modify as HSL stands for Hue, Saturation, Lightness 
+    where we can change the intensity of the color using S(% of gray) & L(% of light). 
+*/
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Helvicta, sans-serif;
+}
+.title{
+    background-color: var(--table-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    width: 500px;
+    border: 2px solid var(--table-color);    
+}
+
+.headerCell{
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid hsl(0, 0%, 95%);
+    font-size: 14px;
+}
+
+.dataCell{
+    display: flex;
+    font-size: 12px;
+}
+
+.green{
+    background-color: hsl(120, 100%, 95%);
+}
+/*  Instead we can also use :nth-child()
+.dataCell:nth-child(even){
+    background-color: hsl(120, 100%, 95%);
+}*/
+
+.tableContents{
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 100%);
+}
