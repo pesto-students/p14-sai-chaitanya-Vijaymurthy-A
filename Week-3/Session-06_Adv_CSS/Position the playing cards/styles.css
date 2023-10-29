@@ -1,0 +1,78 @@
+.table {
+    width: 400px;
+    height: 300px;
+ 
+    /* Part of your solution goes here */
+    box-sizing: border-box;
+    background-image: linear-gradient(forestgreen, darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .cardRed {
+    color: red;
+ }
+ 
+ .cardBlack {
+    color: black;
+ }
+ 
+ .card {
+    background-color: whitesmoke;
+    border: 1px solid black;         
+    width: 100px;
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    font-size: 80px;
+ 
+    /* Part of your solution goes here */
+    border-radius: 5%;
+    margin-top: 5%;
+    box-shadow: 5px 5px black;
+    position: relative;
+ 
+ }      
+ 
+ .cardTop {
+    /* Part of your solution goes here */
+    left: 50px;
+    z-index: 1;
+ }
+ 
+ .cardBottom {
+    /* Part of your solution goes here */
+    left: 30px;
+    top: 20px;
+ }
+ 
+ .heart {
+    color: red;
+    font-size: 28px; 
+    width: 30px;
+    height: 30px;  
+    line-height: 30px;
+ }
+ 
+ .spade {
+    color: black;
+    font-size: 36px; 
+    width: 30px;
+    height: 30px;  
+    line-height: 30px;
+ }
+ 
+ .topLeft {
+    /* Part of your solution goes here */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+ }
+ 
+ .bottomRight {
+    /* Part of your solution goes here */
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+ }
