@@ -12,6 +12,3 @@ function divideArrays(nums) {
   evenNums.length > 0 ? console.log(evenNums) : console.log("None");
   oddNums.length > 0 ? console.log(oddNums) : console.log("None");
 }
-
-numbers = [1, 2, 4];
-divideArrays(numbers);

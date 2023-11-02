@@ -32,5 +32,3 @@ function numberGuessingGame(numToGuess, toalGuesses = 10) {
     }
   }
 }
-
-console.log("The number guessed in " + numberGuessingGame(3) + " times");
