@@ -7,7 +7,7 @@ const generateTransactionId = (function () {
   // Closure that can able to to access the outer function attribute
   function generateId() {
     count += 1;
-    let id = `TRANSACTION_ID_${count}`;
+    const id = `TRANSACTION_ID_${count}`;
     return Symbol(id);
   }
 
