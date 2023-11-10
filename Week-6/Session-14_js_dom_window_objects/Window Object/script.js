@@ -26,14 +26,13 @@ function displayWindowProperties() {
   //   Set cookie with expiration of 7 days
   let expDate = new Date();
   expDate.setDate(expDate.getDate() + 7);
-  document.cookie =
-    "random_number=2387562dhbsfwye3428ryubs;expires=" + expDate.toUTCString();
+  document.cookie = "name=vijay;expires=" + expDate.toUTCString();
   console.log(document.cookie);
 
   //   Remove cookie
   setTimeout(() => {
     console.log("Removing Cookie");
     expDate.setDate(expDate.getDate() - 10);
-    document.cookie = "random_number=;expires" + expDate.toUTCString();
+    document.cookie = "name=;expires" + expDate.toUTCString();
   }, 10000);
 }
