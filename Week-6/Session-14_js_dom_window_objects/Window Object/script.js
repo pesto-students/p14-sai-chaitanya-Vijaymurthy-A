@@ -27,13 +27,13 @@ function displayWindowProperties() {
   let expDate = new Date();
   expDate.setDate(expDate.getDate() + 7);
   document.cookie =
-    "auth_token=2387562dhbsfwye3428ryubs;expires=" + expDate.toUTCString();
+    "random_number=2387562dhbsfwye3428ryubs;expires=" + expDate.toUTCString();
   console.log(document.cookie);
 
   //   Remove cookie
   setTimeout(() => {
     console.log("Removing Cookie");
     expDate.setDate(expDate.getDate() - 10);
-    document.cookie = "auth_token=;expires" + expDate.toUTCString();
+    document.cookie = "random_number=;expires" + expDate.toUTCString();
   }, 10000);
 }
